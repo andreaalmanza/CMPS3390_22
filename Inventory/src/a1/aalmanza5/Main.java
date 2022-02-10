@@ -15,7 +15,9 @@ public class Main {
         FoodItems[] foodItems = FoodItems.values();
         Tools[] tools = Tools.values();
         ToolUses[] toolUses = ToolUses.values();
-
+        OutfitItems[] outfitItems = OutfitItems.values();
+        CoolFit[] coolFits = CoolFit.values();
+        CarItems[] carItems = CarItems.values();
         System.out.print("HOw many items do you want: ");
 	    int itemCnt = Integer.parseInt(scan.nextLine());
 
@@ -42,6 +44,42 @@ public class Main {
                     Tool tmpTool = new Tool(toolName, toolPrice, toolQty, use);
                     //System.out.println(tmp);
                     items.add(tmpTool);
+
+                    int outfitIndex = ran.nextInt(outfitItems.length);
+                    String fitName = outfitItems[outfitIndex].toString();
+                    float fitPrice = ran.nextFloat(100);
+                    int fitQty = ran.nextInt(200);
+                    String wears = coolFits[outfitIndex].toString();
+                    Outfit tmpOutfit = new Outfit(fitName, fitPrice, fitQty, wears);
+                    items.add(tmpOutfit);
+
+                    int carIndex = ran.nextInt(carItems.length);
+                    String carName = carItems[carIndex].toString();
+                    float carPrice = ran.nextFloat(10000);
+                    int carQty = ran.nextInt(30);
+                    float fast = ran.nextFloat(500);
+                    Cars tmpCars = new Cars(carName, carPrice, carQty, fast);
+                    //System.out.println(c);
+                    items.add(tmpCars);
+                }
+                case 2 -> {
+                    int outfitIndex = ran.nextInt(outfitItems.length);
+                    String fitName = outfitItems[outfitIndex].toString();
+                    float fitPrice = ran.nextFloat(100);
+                    int fitQty = ran.nextInt(200);
+                    String wears = coolFits[outfitIndex].toString();
+                    Outfit tmpOutfit = new Outfit(fitName, fitPrice, fitQty, wears);
+                    items.add(tmpOutfit);
+                }
+                case 3 -> {
+                    int carIndex = ran.nextInt(carItems.length);
+                    String carName = carItems[carIndex].toString();
+                    float carPrice = ran.nextFloat(10000);
+                    int carQty = ran.nextInt(30);
+                    float fast = ran.nextFloat(500);
+                    Cars tmpCars = new Cars(carName, carPrice, carQty, fast);
+                    //System.out.println(c);
+                    items.add(tmpCars);
                 }
             }
 
