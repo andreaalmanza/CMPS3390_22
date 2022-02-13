@@ -29,7 +29,7 @@ public class Main {
                 case 0 -> items.add(genFood());
 
                 case 1 -> items.add(genTool());
-                    
+
 
 
                 case 2 -> items.add(genOutfit());
