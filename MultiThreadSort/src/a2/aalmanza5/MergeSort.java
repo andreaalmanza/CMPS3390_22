@@ -3,13 +3,17 @@ package a2.aalmanza5;
 import a1.aalmanza5.Item;
 
 public class MergeSort extends Thread{
-    private Item[] item1;
-    private Item[] item2;
-    private Item[] sortedItems;
+    private final Item[] item1;
+    private final Item[] item2;
+    //private final Item[] item3;
+    //private final Item[] item4;
+    private final Item[] sortedItems;
 
     public MergeSort(Item[] i1, Item[] i2){
         this.item1 = i1;
         this.item2 = i2;
+        //this.item3 = i3;
+        //this.item4 = i4;
         this.sortedItems = new Item[i1.length + i2.length];
     }
 
