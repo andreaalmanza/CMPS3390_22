@@ -1,0 +1,13 @@
+.list-view{
+    -fx-background-color: #f2ffb0
+}
+
+.list-cell:odd{
+    -fx-background-color: #ebbee8;
+    -fx-text-fill: #35964f;
+}
+
+.list-cell:even{
+    -fx-background-color: #e882e1;
+    -fx-text-fill: #35964f;
+}
