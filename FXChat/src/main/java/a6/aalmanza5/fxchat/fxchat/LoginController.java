@@ -45,7 +45,7 @@ public class LoginController {
         ChatViewController chatViewController = fxmlLoader.getController();
         chatViewController.setClient(client);
         Stage stage = (Stage) txtUserName.getScene().getWindow();
-        stage.setOnHidden(event -> {client.closeEverything();});
+        stage.setOnHidden(event -> {client.closeEverything();}); //
         stage.setScene(scene);
     }
 
