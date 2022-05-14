@@ -5,15 +5,19 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 
 
-public class Paddles {
+public class Paddles extends GamePlay{
     private int x, y;
     private int speed = 0;
     private int width = 20, height = 70;
-    private Color color;
+    @FXML
+    private Rectangle paddle1Rec;
+    @FXML
+    private Rectangle paddle2Rec;
 
-    private boolean left, right;
+   // private boolean left, right;
     private int score = 0;
 
     public Paddles() {
@@ -37,5 +41,8 @@ public class Paddles {
 
     }
 
-    public void draw(Canvas canvas){}
+    public void draw(Canvas canvas){
+        Rectangle paddle1 = this.paddle1Rec;
+        Rectangle paddle2 = this.paddle2Rec;
+    }
 }

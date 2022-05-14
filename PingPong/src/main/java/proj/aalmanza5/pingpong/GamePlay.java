@@ -2,12 +2,11 @@ package proj.aalmanza5.pingpong;
 
 import javafx.fxml.FXML;
 import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Paint;
-import javafx.stage.Stage;
 
 public class GamePlay implements Runnable {
+
     private Paint paint;
     public static final int WIDTH = 800;
     public static final int HEIGHT = WIDTH * 9/16;
@@ -24,6 +23,14 @@ public class GamePlay implements Runnable {
 
 
     }
+    @FXML
+    private AnchorPane gamePane;
+    @FXML
+    private Ball ballCircle;
+    @FXML
+    private Paddles paddle1Rec;
+    @FXML
+    private Paddles paddle2Rec;
 
     @FXML
     public void onKeyPressed(){
@@ -35,10 +42,10 @@ public class GamePlay implements Runnable {
     }
 
     private void initialize(){
-        ball = new Ball();  // new ball
+        ballCircle = new Ball();  // new ball
 
-        paddle1 = new Paddles(); // new paddles
-        paddle2 = new Paddles();
+        paddle1Rec = new Paddles(); // new paddles
+        paddle2Rec = new Paddles();
     }
 
 
@@ -48,11 +55,11 @@ public class GamePlay implements Runnable {
 
 
     }
-
+    // ???
     private void draw(Canvas canvas){
-        ball.draw(canvas);
-        paddle1.draw(canvas);
-        paddle2.draw(canvas);
+        ballCircle.draw(canvas);
+        paddle1Rec.draw(canvas);
+        paddle2Rec.draw(canvas);
 
 
     }
