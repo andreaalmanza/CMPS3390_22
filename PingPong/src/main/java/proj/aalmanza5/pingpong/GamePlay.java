@@ -25,6 +25,15 @@ public class GamePlay implements Runnable {
 
     }
 
+    @FXML
+    public void onKeyPressed(){
+
+    }
+
+    @FXML void onKeyReleased(){
+
+    }
+
     private void initialize(){
         ball = new Ball();  // new ball
 

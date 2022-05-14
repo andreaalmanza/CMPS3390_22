@@ -4,7 +4,9 @@
 <?import javafx.scene.shape.*?>
 
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="500.0" onKeyPressed="#onKeyPressed" onKeyReleased="#onKeyReleased" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8fd5a5ff;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="500.0" onKeyPressed="#onKeyPressed"
+      onKeyReleased="#onKeyReleased" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8fd5a5ff;"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.GamePlay">
    <children>
       <Line endX="24.0" endY="-245.0" layoutX="270.0" layoutY="245.0" startX="30.0" startY="555.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="25.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
