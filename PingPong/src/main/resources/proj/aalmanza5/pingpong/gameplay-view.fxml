@@ -3,12 +3,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="500.0" onKeyPressed="#onKeyPressed"
-      onKeyReleased="#onKeyReleased" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8fd5a5ff;"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.GamePlay">
+<AnchorPane fx:id="gamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8fd5a5ff;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.GamePlay">
    <children>
-      <Line endX="24.0" endY="-245.0" layoutX="270.0" layoutY="245.0" startX="30.0" startY="555.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="25.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+      <Line endX="13.0" endY="352.0" layoutX="279.0" layoutY="48.0" startX="13.0" startY="-48.0" />
+      <Circle fx:id="ballCircle" fill="WHITE" layoutX="403.0" layoutY="270.0" radius="38.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle fx:id="paddle2Rec" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="129.0" layoutY="206.0" onKeyPressed="#onKeyPressed" onKeyReleased="#OnKeyReleased" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+      <Rectangle fx:id="paddle1Rec" arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="129.0" layoutX="588.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="12.0" />
    </children>
-</Pane>
+</AnchorPane>

@@ -1,13 +1,15 @@
 package proj.aalmanza5.pingpong;
 
-import javafx.scene.canvas.Canvas;
-import javafx.scene.paint.Color;
+import javafx.fxml.FXML;
+import javafx.scene.shape.Circle;
 
-//import static java.awt.Color.white;
 
-public class Ball {
+
+public class Ball extends GamePlay {
     public static int SIZE = 16;
-    private Color color;
+
+    @FXML
+    private Circle ballCircle;
 
     private int x, y;
     private int xVelocity, yVelocity;
@@ -51,24 +53,21 @@ public class Ball {
 
 
 
-    public void draw(Canvas canvas){
-        //canvas.Color(color.white);
-       // color(white);
+    public void draw(){
+        Circle ballCircle = this.ballCircle;
 
     }
 
-    //private void color(java.awt.Color white) {
-    //}
 
     public void update(Paddles paddle1, Paddles paddle2){
         x += xVelocity * speed;
         y += yVelocity * speed;
 
-        // At collision
+        // When Ball collides with paddle
         if (y + SIZE >= GamePlay.HEIGHT || y <= 0)
             setYDirection(); // change the direction at collision
         if(x + SIZE >= GamePlay.WIDTH){
-            paddle1.scoredPoint();
+            paddle1.scoredPoint(); //add a point
             reset();
         }
         if (x <= 0) {

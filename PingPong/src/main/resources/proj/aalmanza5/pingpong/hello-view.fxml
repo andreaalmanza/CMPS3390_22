@@ -1,14 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="700.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.PongController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+<!--
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #91ff66; xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.PongController">
+    <children>
+        <Circle fx:id="circle" fill="DODGERBLUE" layoutX="100.0" layoutY="200.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
 
-    <Label fx:id="welcomeText" />
-    <Button fx:id="btnGameWindow" onAction="#onGamePlayClick" text="Play Game!" />
-</VBox>
+       <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding> -->
+<!--
+        <Label fx:id="gametitle" text="PING PONG">
+            <font>
+                <Font size="63.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="welcomeText" />
+        <Circle fx:id="startupball" fill="#f7f8f8" radius="37.0" stroke="BLACK" strokeType="INSIDE" />
+        <Button fx:id="btnGameWindow" onAction="#onGamePlayClick" text="Play Game!" textFill="#ff03ad">
+            <font>
+                <Font name="JetBrains Mono Regular" size="39.0" />
+            </font></Button>
+    </children>
+</AnchorPane> -->
+<!--
+<AnchorPane fx:id="scene" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.PongController">
+   <children>
+      <VBox fx:id="vbox" alignment="CENTER" prefHeight="700.0" prefWidth="500.0" spacing="20.0" style="-fx-background-color: #91ff66;">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <Label fx:id="gametitle" text="PING PONG">
+            <font>
+               <Font size="63.0" />
+            </font>
+         </Label>
+      
+          <Label fx:id="welcomeText" />
+         <Circle fx:id="startupball" fill="#f7f8f8" radius="37.0" stroke="BLACK" strokeType="INSIDE">
+            <cursor>
+               <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+         </Circle>
+          <Button fx:id="btnGameWindow" onAction="#onGamePlayClick" text="Play Game!" textFill="#ff03ad">
+            <font>
+               <Font name="JetBrains Mono Regular" size="39.0" />
+            </font>
+         </Button>
+      </VBox>
+   </children>
+</AnchorPane>
+-->
+
+<AnchorPane fx:id="scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="850.0" style="-fx-background-color: #91ff66;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proj.aalmanza5.pingpong.PongController">
+    <children>
+        <Label fx:id="gametitle" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="260.0" layoutY="81.0" text="PING PONG" textAlignment="CENTER">
+            <font>
+                <Font size="63.0" />
+            </font>
+        </Label>
+        <Circle fx:id="circle" fill="#f7f8f8" layoutX="293.0" layoutY="202.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+        <Button fx:id="btnGameWindow" alignment="CENTER" contentDisplay="CENTER" layoutX="293.0" layoutY="307.0" onAction="#onGamePlayClick" text="Play Game!" textFill="#ff03ad">
+            <font>
+                <Font name="JetBrains Mono Regular" size="39.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
